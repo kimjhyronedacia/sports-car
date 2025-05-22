@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Thunderbolt Sports Car</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap');
+
+    body {
+      margin: 0;
+      background-color: #111;
+      font-family: 'Oswald', sans-serif;
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    header {
+      background-color: #e63946;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 3px 10px rgba(230,57,70,0.7);
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2rem;
+      letter-spacing: 3px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 1.5rem;
+      font-weight: 700;
+      transition: color 0.3s ease;
+      font-size: 1rem;
+    }
+
+    nav a:hover {
+      color: #f1faee;
+    }
+
+    main {
+      flex: 1;
+      max-width: 900px;
+      margin: 3rem auto;
+      background-color: #1b1b1b;
+      border-radius: 12px;
+      box-shadow: 0 10px 30px rgba(230, 57, 70, 0.7);
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+      padding: 2rem;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .car-image {
+      max-width: 400px;
+      width: 100%;
+      border-radius: 12px;
+      object-fit: cover;
+      box-shadow: 0 8px 25px rgba(230,57,70,0.8);
+    }
+
+    .car-info {
+      flex: 1 1 300px;
+      min-width: 280px;
+    }
+
+    .car-info h2 {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+      color: #e63946;
+      letter-spacing: 2px;
+    }
+
+    .price {
+      font-weight: 800;
+      font-size: 1.8rem;
+      margin-bottom: 1rem;
+      color: #f1faee;
+    }
+
+    .description {
+      font-size: 1.1rem;
+      line-height: 1.6;
+      margin-bottom: 2rem;
+      color: #ccc;
+    }
+
+    .btn-buy {
+      background-color: #e63946;
+      padding: 1rem 2.5rem;
+      color: white;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      border: none;
+      border-radius: 30px;
+      cursor: pointer;
+      box-shadow: 0 8px 20px rgba(230, 57, 70, 0.8);
+      transition: background-color 0.3s ease;
+      text-decoration: none;
+      display: inline-block;
+    }
+
+    .btn-buy:hover {
+      background-color: #b43139;
+      box-shadow: 0 10px 25px rgba(180, 49, 57, 0.9);
+    }
+
+    footer {
+      text-align: center;
+      padding: 1.5rem;
+      background-color: #222;
+      color: #888;
+      font-size: 0.9rem;
+      user-select: none;
+      margin-top: auto;
+    }
+
+    @media (max-width: 650px) {
+      main {
+        flex-direction: column;
+        padding: 1.5rem;
+        margin: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Thunderbolt</h1>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Models</a>
+      <a href="#">Gallery</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <img class="car-image" src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=400&q=80" alt="Thunderbolt Sports Car" />
+    <div class="car-info">
+      <h2>Thunderbolt X1</h2>
+      <p class="price">$180,000</p>
+      <p class="description">
+        Experience the thrill of the Thunderbolt X1, powered by a 600HP V8 engine and aerodynamic design crafted for ultimate speed and control.
+      </p>
+      <a href="#" class="btn-buy">Buy Now</a>
+    </div>
+  </main>
+
+  <footer>
+    &copy; 2024 Thunderbolt Automotive. All rights reserved.
+  </footer>
+</body>
+</html>
